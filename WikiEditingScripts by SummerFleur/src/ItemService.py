@@ -30,6 +30,7 @@ class GameData:
         self.fruit_trees_data: dict[str, dict] = {}
         self.shops_data: dict[str, dict] = {}
         self.item_id: dict[str, str] = {}
+        self.fish_data: dict[str, str] = {}
         self.namespace = namespace
 
         # 根据命名空间，获取相关原始数据
@@ -45,6 +46,7 @@ class GameData:
                 self.fruit_trees_data = FileUtils.read_json(json_path / "FruitTrees.json")
                 self.shops_data = FileUtils.read_json(json_path / "Shops.json")
                 self.item_id = FileUtils.read_json(json_path / "ItemID.json")
+                self.fish_data = FileUtils.read_json(json_path / "Fish.json")
             # 读取 SVE JSON 文件
             case "SVE":
                 json_path = Path(__file__).parent.parent / "json_sve"

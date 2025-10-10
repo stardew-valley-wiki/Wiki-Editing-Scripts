@@ -65,6 +65,16 @@ def flavored_artisan() -> None:
                 print(result)
 
 
+def text_replace() -> None:
+    pages = ()
+    for page in pages:
+        target_page = wiki.pages[page]
+        text = target_page.text()
+        new_text = text.replace("<UNK>", "<UNK>")
+        result = target_page.edit(text=new_text, summary="返回至模板旧名称")
+        print(result)
+
+
 def include_transformer(**kwargs) -> str:
     parts = kwargs['text'].split(f"{{{{Infobox {kwargs['type']}")
 
