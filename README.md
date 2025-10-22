@@ -6,9 +6,7 @@ The scripts in this directory are licensed under the [GPL-3.0 license](LICENSE).
 
 ## 准备工作
 
-本目录内需要使用 [@ytloe](https://github.com/ytloe) 在本仓库内的 [calcScripts](../calcScripts%20by%20Ytloe) 作为前置。因此需要先安装其项目的全部依赖。
-
-然后再安装本项目所需的依赖，已经写在 pyproject.toml 里了，如果使用了包管理器或者 PyCharm，那么应该可以很方便的安装依赖。
+首先需要安装本项目所需的依赖，已经写在 pyproject.toml 里了，如果使用了包管理器或者 PyCharm，那么应该可以很方便的安装依赖。
 
 #### json 目录
 
