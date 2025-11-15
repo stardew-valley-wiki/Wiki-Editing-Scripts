@@ -1,0 +1,1090 @@
+{
+  "(W)0": {
+    "Name": "Rusty Sword",
+    "DisplayName": "生锈的剑",
+    "SellPrice": 50,
+    "Level": 1,
+    "Type": "剑",
+    "Damage": "2-5",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": null,
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)1": {
+    "Name": "Silver Saber",
+    "DisplayName": "镀银军刀",
+    "SellPrice": 100,
+    "Level": 2,
+    "Type": "剑",
+    "Damage": "8-15",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": null,
+      "Defense": "1",
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)2": {
+    "Name": "Dark Sword",
+    "DisplayName": "黑暗剑",
+    "SellPrice": 450,
+    "Level": 9,
+    "Type": "剑",
+    "Damage": "30-45",
+    "CritChance": "0.04",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "-5",
+      "Defense": null,
+      "CritChance": "2",
+      "CritPower": null,
+      "Weight": "+5"
+    }
+  },
+  "(W)3": {
+    "Name": "Holy Blade",
+    "DisplayName": "圣剑",
+    "SellPrice": 350,
+    "Level": 7,
+    "Type": "剑",
+    "Damage": "20-27",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "+4",
+      "Defense": "2",
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)4": {
+    "Name": "Galaxy Sword",
+    "DisplayName": "银河剑",
+    "SellPrice": 650,
+    "Level": 13,
+    "Type": "剑",
+    "Damage": "60-80",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "+4",
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)5": {
+    "Name": "Bone Sword",
+    "DisplayName": "骨剑",
+    "SellPrice": 250,
+    "Level": 5,
+    "Type": "剑",
+    "Damage": "20-30",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "+4",
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": "+2"
+    }
+  },
+  "(W)6": {
+    "Name": "Iron Edge",
+    "DisplayName": "铁刃",
+    "SellPrice": 150,
+    "Level": 3,
+    "Type": "剑",
+    "Damage": "12-25",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "-2",
+      "Defense": "1",
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": "+3"
+    }
+  },
+  "(W)7": {
+    "Name": "Templar's Blade",
+    "DisplayName": "圣堂之刃",
+    "SellPrice": 250,
+    "Level": 5,
+    "Type": "剑",
+    "Damage": "22-29",
+    "CritChance": "0.00",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": null,
+      "Defense": "1",
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)8": {
+    "Name": "Obsidian Edge",
+    "DisplayName": "黑曜石之刃",
+    "SellPrice": 300,
+    "Level": 6,
+    "Type": "剑",
+    "Damage": "30-45",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.2",
+    "Statistics": {
+      "Speed": "-1",
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": "10",
+      "Weight": null
+    }
+  },
+  "(W)9": {
+    "Name": "Lava Katana",
+    "DisplayName": "熔岩武士刀",
+    "SellPrice": 500,
+    "Level": 10,
+    "Type": "剑",
+    "Damage": "55-64",
+    "CritChance": "0.01",
+    "CritMultiplier": "3.5",
+    "Statistics": {
+      "Speed": null,
+      "Defense": "3",
+      "CritChance": null,
+      "CritPower": "25",
+      "Weight": "+3"
+    }
+  },
+  "(W)10": {
+    "Name": "Claymore",
+    "DisplayName": "双刃大剑",
+    "SellPrice": 250,
+    "Level": 5,
+    "Type": "剑",
+    "Damage": "20-32",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "-4",
+      "Defense": "2",
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": "+3"
+    }
+  },
+  "(W)11": {
+    "Name": "Steel Smallsword",
+    "DisplayName": "钢制轻剑",
+    "SellPrice": 50,
+    "Level": 1,
+    "Type": "剑",
+    "Damage": "4-8",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "+2",
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)12": {
+    "Name": "Wooden Blade",
+    "DisplayName": "木剑",
+    "SellPrice": 50,
+    "Level": 1,
+    "Type": "剑",
+    "Damage": "3-7",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": null,
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)13": {
+    "Name": "Insect Head",
+    "DisplayName": "昆虫头部",
+    "SellPrice": 300,
+    "Level": 6,
+    "Type": "剑",
+    "Damage": "20-30",
+    "CritChance": "0.04",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "+2",
+      "Defense": null,
+      "CritChance": "2",
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)14": {
+    "Name": "Neptune's Glaive",
+    "DisplayName": "海王星大剑",
+    "SellPrice": 250,
+    "Level": 5,
+    "Type": "剑",
+    "Damage": "18-35",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "-1",
+      "Defense": "2",
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": "+4"
+    }
+  },
+  "(W)15": {
+    "Name": "Forest Sword",
+    "DisplayName": "森林剑",
+    "SellPrice": 150,
+    "Level": 3,
+    "Type": "剑",
+    "Damage": "8-18",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "+2",
+      "Defense": "1",
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)16": {
+    "Name": "Carving Knife",
+    "DisplayName": "刻刀",
+    "SellPrice": 50,
+    "Level": 1,
+    "Type": "匕首",
+    "Damage": "1-3",
+    "CritChance": "0.04",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": null,
+      "Defense": null,
+      "CritChance": "2",
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)17": {
+    "Name": "Iron Dirk",
+    "DisplayName": "铁制短剑",
+    "SellPrice": 50,
+    "Level": 1,
+    "Type": "匕首",
+    "Damage": "2-4",
+    "CritChance": "0.03",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": null,
+      "Defense": null,
+      "CritChance": "2",
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)18": {
+    "Name": "Burglar's Shank",
+    "DisplayName": "飞贼之胫",
+    "SellPrice": 200,
+    "Level": 4,
+    "Type": "匕首",
+    "Damage": "7-12",
+    "CritChance": "0.04",
+    "CritMultiplier": "3.5",
+    "Statistics": {
+      "Speed": null,
+      "Defense": null,
+      "CritChance": "2",
+      "CritPower": "25",
+      "Weight": null
+    }
+  },
+  "(W)19": {
+    "Name": "Shadow Dagger",
+    "DisplayName": "暗影匕首",
+    "SellPrice": 200,
+    "Level": 4,
+    "Type": "匕首",
+    "Damage": "10-20",
+    "CritChance": "0.04",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": null,
+      "Defense": null,
+      "CritChance": "2",
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)20": {
+    "Name": "Elf Blade",
+    "DisplayName": "精灵之刃",
+    "SellPrice": 100,
+    "Level": 2,
+    "Type": "匕首",
+    "Damage": "3-5",
+    "CritChance": "0.04",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": null,
+      "Defense": null,
+      "CritChance": "2",
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)21": {
+    "Name": "Crystal Dagger",
+    "DisplayName": "水晶匕首",
+    "SellPrice": 200,
+    "Level": 4,
+    "Type": "匕首",
+    "Damage": "4-10",
+    "CritChance": "0.03",
+    "CritMultiplier": "4.0",
+    "Statistics": {
+      "Speed": null,
+      "Defense": null,
+      "CritChance": "2",
+      "CritPower": "50",
+      "Weight": "+5"
+    }
+  },
+  "(W)22": {
+    "Name": "Wind Spire",
+    "DisplayName": "疾风利剑",
+    "SellPrice": 50,
+    "Level": 1,
+    "Type": "匕首",
+    "Damage": "1-5",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.2",
+    "Statistics": {
+      "Speed": null,
+      "Defense": null,
+      "CritChance": "1",
+      "CritPower": "10",
+      "Weight": "+5"
+    }
+  },
+  "(W)23": {
+    "Name": "Galaxy Dagger",
+    "DisplayName": "银河匕首",
+    "SellPrice": 400,
+    "Level": 8,
+    "Type": "匕首",
+    "Damage": "30-40",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "+1",
+      "Defense": null,
+      "CritChance": "1",
+      "CritPower": null,
+      "Weight": "+5"
+    }
+  },
+  "(W)24": {
+    "Name": "Wood Club",
+    "DisplayName": "木棒",
+    "SellPrice": 100,
+    "Level": 2,
+    "Type": "锤",
+    "Damage": "9-16",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": null,
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)25": {
+    "Name": "Alex's Bat",
+    "DisplayName": "亚历克斯的棒球棍",
+    "SellPrice": 350,
+    "Level": 7,
+    "Type": "锤",
+    "Damage": "40-55",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "-2",
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)26": {
+    "Name": "Lead Rod",
+    "DisplayName": "铅棒",
+    "SellPrice": 200,
+    "Level": 4,
+    "Type": "锤",
+    "Damage": "18-27",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "-4",
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)27": {
+    "Name": "Wood Mallet",
+    "DisplayName": "木锤",
+    "SellPrice": 150,
+    "Level": 3,
+    "Type": "锤",
+    "Damage": "15-24",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "+2",
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": "+3"
+    }
+  },
+  "(W)28": {
+    "Name": "The Slammer",
+    "DisplayName": "巨锤",
+    "SellPrice": 350,
+    "Level": 7,
+    "Type": "锤",
+    "Damage": "40-55",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "-2",
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)29": {
+    "Name": "Galaxy Hammer",
+    "DisplayName": "银河之锤",
+    "SellPrice": 600,
+    "Level": 12,
+    "Type": "锤",
+    "Damage": "70-90",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "+2",
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": "+5"
+    }
+  },
+  "(W)30": {
+    "Name": "Sam's Old Guitar",
+    "DisplayName": "山姆的旧吉他",
+    "SellPrice": 350,
+    "Level": 7,
+    "Type": "锤",
+    "Damage": "40-55",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "-2",
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)31": {
+    "Name": "Femur",
+    "DisplayName": "股骨",
+    "SellPrice": 100,
+    "Level": 2,
+    "Type": "锤",
+    "Damage": "6-11",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "+2",
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)35": {
+    "Name": "Elliott's Pencil",
+    "DisplayName": "艾利欧特的铅笔",
+    "SellPrice": 400,
+    "Level": 8,
+    "Type": "匕首",
+    "Damage": "24-30",
+    "CritChance": "0.06",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": null,
+      "Defense": null,
+      "CritChance": "4",
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)36": {
+    "Name": "Maru's Wrench",
+    "DisplayName": "玛鲁的扳手",
+    "SellPrice": 350,
+    "Level": 7,
+    "Type": "锤",
+    "Damage": "40-55",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "-2",
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)37": {
+    "Name": "Harvey's Mallet",
+    "DisplayName": "哈维的锤子",
+    "SellPrice": 350,
+    "Level": 7,
+    "Type": "锤",
+    "Damage": "40-55",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "-2",
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)38": {
+    "Name": "Penny's Fryer",
+    "DisplayName": "潘妮的煎锅",
+    "SellPrice": 350,
+    "Level": 7,
+    "Type": "锤",
+    "Damage": "40-55",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "-2",
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)39": {
+    "Name": "Leah's Whittler",
+    "DisplayName": "莉亚的削木刀",
+    "SellPrice": 300,
+    "Level": 6,
+    "Type": "剑",
+    "Damage": "30-45",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.2",
+    "Statistics": {
+      "Speed": "-1",
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": "10",
+      "Weight": null
+    }
+  },
+  "(W)40": {
+    "Name": "Abby's Planchette",
+    "DisplayName": "阿比盖尔的占卜写板",
+    "SellPrice": 400,
+    "Level": 8,
+    "Type": "匕首",
+    "Damage": "24-30",
+    "CritChance": "0.06",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": null,
+      "Defense": null,
+      "CritChance": "4",
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)41": {
+    "Name": "Seb's Lost Mace",
+    "DisplayName": "塞巴斯蒂安的遗失之锤",
+    "SellPrice": 350,
+    "Level": 7,
+    "Type": "锤",
+    "Damage": "40-55",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "-2",
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)42": {
+    "Name": "Haley's Iron",
+    "DisplayName": "海莉的烫发棒",
+    "SellPrice": 300,
+    "Level": 6,
+    "Type": "剑",
+    "Damage": "30-45",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.2",
+    "Statistics": {
+      "Speed": "-1",
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": "10",
+      "Weight": null
+    }
+  },
+  "(W)43": {
+    "Name": "Pirate's Sword",
+    "DisplayName": "海盗剑",
+    "SellPrice": 100,
+    "Level": 2,
+    "Type": "剑",
+    "Damage": "8-14",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "+2",
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)44": {
+    "Name": "Cutlass",
+    "DisplayName": "弯刀",
+    "SellPrice": 150,
+    "Level": 3,
+    "Type": "剑",
+    "Damage": "9-17",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "+2",
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)45": {
+    "Name": "Wicked Kris",
+    "DisplayName": "蛇形邪剑",
+    "SellPrice": 400,
+    "Level": 8,
+    "Type": "匕首",
+    "Damage": "24-30",
+    "CritChance": "0.06",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": null,
+      "Defense": null,
+      "CritChance": "4",
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)46": {
+    "Name": "Kudgel",
+    "DisplayName": "长柄锤",
+    "SellPrice": 300,
+    "Level": 6,
+    "Type": "锤",
+    "Damage": "27-40",
+    "CritChance": "0.02",
+    "CritMultiplier": "4.0",
+    "Statistics": {
+      "Speed": "-1",
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": "50",
+      "Weight": "+2"
+    }
+  },
+  "(W)47": {
+    "Name": "Scythe",
+    "DisplayName": "镰刀",
+    "SellPrice": 0,
+    "Level": 1,
+    "Type": "剑",
+    "Damage": "1-3",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": null,
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)48": {
+    "Name": "Yeti Tooth",
+    "DisplayName": "雪怪之牙",
+    "SellPrice": 350,
+    "Level": 7,
+    "Type": "剑",
+    "Damage": "26-42",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.2",
+    "Statistics": {
+      "Speed": null,
+      "Defense": "4",
+      "CritChance": null,
+      "CritPower": "10",
+      "Weight": null
+    }
+  },
+  "(W)49": {
+    "Name": "Rapier",
+    "DisplayName": "细剑",
+    "SellPrice": 200,
+    "Level": 4,
+    "Type": "剑",
+    "Damage": "15-25",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "+2",
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)50": {
+    "Name": "Steel Falchion",
+    "DisplayName": "钢刀",
+    "SellPrice": 400,
+    "Level": 8,
+    "Type": "剑",
+    "Damage": "28-46",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.4",
+    "Statistics": {
+      "Speed": "+4",
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": "20",
+      "Weight": null
+    }
+  },
+  "(W)51": {
+    "Name": "Broken Trident",
+    "DisplayName": "残破的三叉戟",
+    "SellPrice": 250,
+    "Level": 5,
+    "Type": "匕首",
+    "Damage": "15-26",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": null,
+      "Defense": null,
+      "CritChance": "1",
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)52": {
+    "Name": "Tempered Broadsword",
+    "DisplayName": "淬火阔剑",
+    "SellPrice": 350,
+    "Level": 7,
+    "Type": "剑",
+    "Damage": "29-44",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "-3",
+      "Defense": "3",
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": "+3"
+    }
+  },
+  "(W)53": {
+    "Name": "Golden Scythe",
+    "DisplayName": "金色的镰刀",
+    "SellPrice": 0,
+    "Level": 3,
+    "Type": "剑",
+    "Damage": "13-13",
+    "CritChance": "0.02",
+    "CritMultiplier": "4.0",
+    "Statistics": {
+      "Speed": null,
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": "50",
+      "Weight": null
+    }
+  },
+  "(W)54": {
+    "Name": "Dwarf Sword",
+    "DisplayName": "矮人剑",
+    "SellPrice": 650,
+    "Level": 13,
+    "Type": "剑",
+    "Damage": "65-75",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "+2",
+      "Defense": "4",
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)55": {
+    "Name": "Dwarf Hammer",
+    "DisplayName": "矮人锤",
+    "SellPrice": 650,
+    "Level": 13,
+    "Type": "锤",
+    "Damage": "75-85",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": null,
+      "Defense": "2",
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": "+5"
+    }
+  },
+  "(W)56": {
+    "Name": "Dwarf Dagger",
+    "DisplayName": "矮人匕首",
+    "SellPrice": 550,
+    "Level": 11,
+    "Type": "匕首",
+    "Damage": "32-38",
+    "CritChance": "0.03",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "+1",
+      "Defense": "6",
+      "CritChance": "2",
+      "CritPower": null,
+      "Weight": "+5"
+    }
+  },
+  "(W)57": {
+    "Name": "Dragontooth Cutlass",
+    "DisplayName": "龙牙弯刀",
+    "SellPrice": 650,
+    "Level": 13,
+    "Type": "剑",
+    "Damage": "75-90",
+    "CritChance": "0.02",
+    "CritMultiplier": "4.0",
+    "Statistics": {
+      "Speed": null,
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": "50",
+      "Weight": null
+    }
+  },
+  "(W)58": {
+    "Name": "Dragontooth Club",
+    "DisplayName": "龙牙棒",
+    "SellPrice": 700,
+    "Level": 14,
+    "Type": "锤",
+    "Damage": "80-100",
+    "CritChance": "0.02",
+    "CritMultiplier": "4.0",
+    "Statistics": {
+      "Speed": null,
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": "50",
+      "Weight": "+3"
+    }
+  },
+  "(W)59": {
+    "Name": "Dragontooth Shiv",
+    "DisplayName": "龙牙小刀",
+    "SellPrice": 600,
+    "Level": 12,
+    "Type": "匕首",
+    "Damage": "40-50",
+    "CritChance": "0.05",
+    "CritMultiplier": "5.0",
+    "Statistics": {
+      "Speed": null,
+      "Defense": null,
+      "CritChance": "3",
+      "CritPower": "100",
+      "Weight": "+5"
+    }
+  },
+  "(W)60": {
+    "Name": "Ossified Blade",
+    "DisplayName": "骨化剑",
+    "SellPrice": 300,
+    "Level": 6,
+    "Type": "剑",
+    "Damage": "26-42",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "-2",
+      "Defense": "1",
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": "+2"
+    }
+  },
+  "(W)61": {
+    "Name": "Iridium Needle",
+    "DisplayName": "铱针",
+    "SellPrice": 600,
+    "Level": 12,
+    "Type": "匕首",
+    "Damage": "20-35",
+    "CritChance": "0.10",
+    "CritMultiplier": "7.0",
+    "Statistics": {
+      "Speed": null,
+      "Defense": null,
+      "CritChance": "6",
+      "CritPower": "200",
+      "Weight": null
+    }
+  },
+  "(W)62": {
+    "Name": "Infinity Blade",
+    "DisplayName": "无限之刃",
+    "SellPrice": 850,
+    "Level": 17,
+    "Type": "剑",
+    "Damage": "80-100",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "+4",
+      "Defense": "2",
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": null
+    }
+  },
+  "(W)63": {
+    "Name": "Infinity Gavel",
+    "DisplayName": "无限之锤",
+    "SellPrice": 850,
+    "Level": 17,
+    "Type": "锤",
+    "Damage": "100-120",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "+2",
+      "Defense": "1",
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": "+5"
+    }
+  },
+  "(W)64": {
+    "Name": "Infinity Dagger",
+    "DisplayName": "无限匕首",
+    "SellPrice": 800,
+    "Level": 16,
+    "Type": "匕首",
+    "Damage": "50-70",
+    "CritChance": "0.06",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "+1",
+      "Defense": "3",
+      "CritChance": "4",
+      "CritPower": null,
+      "Weight": "+5"
+    }
+  },
+  "(W)65": {
+    "Name": "Meowmere",
+    "DisplayName": "彩虹猫之刃",
+    "SellPrice": 200,
+    "Level": 4,
+    "Type": "剑",
+    "Damage": "20-20",
+    "CritChance": "0.02",
+    "CritMultiplier": "3.0",
+    "Statistics": {
+      "Speed": "+4",
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": null,
+      "Weight": "+2"
+    }
+  },
+  "(W)66": {
+    "Name": "Iridium Scythe",
+    "DisplayName": "铱镰刀",
+    "SellPrice": 0,
+    "Level": 4,
+    "Type": "剑",
+    "Damage": "20-20",
+    "CritChance": "0.02",
+    "CritMultiplier": "4.0",
+    "Statistics": {
+      "Speed": null,
+      "Defense": null,
+      "CritChance": null,
+      "CritPower": "50",
+      "Weight": null
+    }
+  }
+}

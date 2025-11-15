@@ -18,6 +18,9 @@ class GameData:
         bigcraftables_zh_cn: 英文名 -> 中文名
         crops_data: 解析 Crops.json 得到的字典
         fruit_trees_data: 解析 FruitTrees.json 得到的字典
+        shops_data: 解析 Shops.json 得到的字典
+        fish_data: 解析 Fish.json 得到的字典
+        weapon_data: 解析 Weapons.json 得到的字典
         namespace: 当前位于哪个空间，Vanilla 为原版，或 SVE
     """
 
@@ -29,8 +32,9 @@ class GameData:
         self.crops_data: dict[str, dict] = {}
         self.fruit_trees_data: dict[str, dict] = {}
         self.shops_data: dict[str, dict] = {}
-        self.item_id: dict[str, str] = {}
         self.fish_data: dict[str, str] = {}
+        self.weapon_data: dict[str, dict] = {}
+        self.item_id: dict[str, str] = {}
         self.namespace = namespace
 
         # 根据命名空间，获取相关原始数据
@@ -45,8 +49,9 @@ class GameData:
                 self.crops_data = FileUtils.read_json(json_path / "Crops.json")
                 self.fruit_trees_data = FileUtils.read_json(json_path / "FruitTrees.json")
                 self.shops_data = FileUtils.read_json(json_path / "Shops.json")
-                self.item_id = FileUtils.read_json(json_path / "ItemID.json")
                 self.fish_data = FileUtils.read_json(json_path / "Fish.json")
+                self.weapon_data = FileUtils.read_json(json_path / "Weapons.json")
+                self.item_id = FileUtils.read_json(json_path / "ItemID.json")
             # 读取 SVE JSON 文件
             case "SVE":
                 json_path = Path(__file__).parent.parent / "json_sve"
