@@ -6,7 +6,7 @@ def generate_infobox(category: Literal["vegetable", "fruit", "flower", "forage"]
     objects = game_data.objects_data
 
     for object_id, object_data in objects.items():
-        item = Object(object_data)
+        item = Object(object_data, object_id)
 
         match item.get_field("Category"):
             case -75 if category == "vegetable":

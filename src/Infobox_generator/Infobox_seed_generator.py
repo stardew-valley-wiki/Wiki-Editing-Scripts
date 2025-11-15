@@ -1,5 +1,5 @@
 from src.ShopService import *
-from Recipes_helper import *
+from src.RecipeService import *
 
 
 def generate_infobox() -> None:
@@ -7,11 +7,8 @@ def generate_infobox() -> None:
     objects = game_data.objects_data
     shop_manager = ShopManager()
 
-    parser.parse_all_recipes()
-    recipes: list[readRecipes.Recipe] = parser.crafting_recipe_objects.values()
-
     for object_id, object_data in objects.items():
-        item = Object(object_data)
+        item = Object(object_data, object_id)
 
         if item.get_field("Category") != -74:
             continue
@@ -22,7 +19,11 @@ def generate_infobox() -> None:
 
         crop, growth, season, xp = _search_crop(object_id)
         g_price, j_price, o_price, t_price, i_price, raccoon, nmday = _calc_price(object_id, shop_manager)
-        artisan, source, recipe, ingredients, produces = _get_recipe_data(object_id, recipes)
+        artisan, source, recipe, ingredients, produces = _get_recipe_data(object_id)
+
+        op = ""
+        if name in ["草莓种子"]:
+            op = "这里自己写"
 
         infobox = f"""{name}：\n
 <onlyinclude>{{{{{{{{{{1|Infobox seed}}}}}}
@@ -40,7 +41,7 @@ def generate_infobox() -> None:
 |iPrice         = {i_price}
 |nmday          = {nmday}
 |raccoon        = {raccoon}
-|otherprice     = ---------- 这里看情况要不要删除 ----------
+|otherprice     = {op}
 |artisan        = {artisan}
 |source         = {source}
 |recipe         = {recipe}
@@ -56,6 +57,7 @@ def generate_infobox() -> None:
                    .replace("|iPrice         = \n", "")
                    .replace("|nmday          = \n", "")
                    .replace("|raccoon        = \n", "")
+                   .replace("|op             = \n", "")
                    .replace("|artisan        = \n", "")
                    .replace("|source         = \n", "")
                    .replace("|recipe         = \n", "")
@@ -97,7 +99,7 @@ def _search_crop(seed_id: str) -> tuple[str, str, str, str]:
         xp = f"{{{{Xp|{Crop.get_xp(sellprice)}|farm}}}}"
     # 果树的生长时间和经验（定死）
     elif _tag == "f":
-        harvest = game_data.try_get_object(Object.trim(harvest_id))
+        harvest = game_data.try_get_object(harvest_id)
         growth = "28 天"
         xp = ""
     # 好好反思你怎么触发这个的
@@ -139,13 +141,13 @@ def _calc_price(seed_id: str, shop_manager: ShopManager) -> tuple[str, str, str,
     # 尝试在姜岛商店寻找
     i_goods = shop_manager.island_trade.try_get_goods(seed_id)
     if i_goods is not None:
-        item_name = game_data.get_name(Object.trim(i_goods.trade_item_id))
+        item_name = game_data.get_name(i_goods.trade_item_id)
         i_price = f"{{{{Name|{item_name}|{i_goods.trade_item_amount}}}}}"
 
     # 尝试在浣熊商店寻找
     r_goods = shop_manager.raccoon_shop.try_get_goods(seed_id)
     if r_goods is not None:
-        item_name = game_data.get_name(Object.trim(r_goods.trade_item_id))
+        item_name = game_data.get_name(r_goods.trade_item_id)
         raccoon = f"{{{{Name|{item_name}|{r_goods.trade_item_amount}}}}}"
 
     # 尝试在夜市商店寻找
@@ -164,18 +166,19 @@ def _calc_price(seed_id: str, shop_manager: ShopManager) -> tuple[str, str, str,
     return g_price, j_price, o_price, t_price, i_price, raccoon, nmday
 
 
-def _get_recipe_data(seed_id: str, recipes: list[readRecipes.Recipe]) -> tuple[str, str, str, str, str]:
+def _get_recipe_data(seed_id: str) -> tuple[str, str, str, str, str]:
     artisan, source, recipe, ingredients, produces = "", "", "", "", ""
     if seed_id in ("431", "433"):
         artisan = "y"
 
-    for craft_recipe in recipes:
-        product: readRecipes.Item = craft_recipe.product
-        if product.code == seed_id:
+    recipes = recipe_data.crafting_recipe_objects
+    for craft_recipe in recipes.values():
+        product: Object = craft_recipe.product
+        if product.itemID == seed_id:
             source = "[[打造]]"
             recipe = "---------- 配方来源，这里要自己填 ----------"
-            ingredients = item_list_to_string(craft_recipe.materials)
-            produces = craft_recipe.product.count
+            ingredients = materials_to_string(craft_recipe.materials)
+            produces = product.quantity
 
     return artisan, source, recipe, ingredients, produces
 

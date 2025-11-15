@@ -4,7 +4,7 @@ import re
 from pathlib import Path
 from typing import Any, Literal
 
-from Utilities import FileUtils
+from src.Utilities import FileUtils
 
 
 class GameData:
@@ -72,7 +72,22 @@ class GameData:
         try:
             code = Object.trim(code)
             item = self.objects_data[code]
-            return Object(item)
+            return Object(item, code)
+        except (KeyError, TypeError):
+            return None
+
+    def try_get_bc(self, code: str) -> BigCraftable | None:
+        """
+        根据物品的 QualifiedItemID 来创建 Item 实例。
+        :param code: 物品的 QualifiedItemID
+        :return: 物品实例
+        :exception KeyError: 未找到对应的物品
+        """
+        try:
+            qualified_code = BigCraftable.qualify(code)
+            code = BigCraftable.trim(code)
+            bc = self.bigcraftables_data[code]
+            return BigCraftable(bc, qualified_code)
         except (KeyError, TypeError):
             return None
 
@@ -116,10 +131,16 @@ class GameData:
     def get_name(self, code: str) -> str:
         """
         获取物品的内部名称（英文）
-        :param code: 物品的 QualifiedItemId
+        :param code: 物品的 QualifiedItemId 或 Id
         :return: 物品的内部名称
         """
-        data_source = self.objects_data
+        if code.startswith("(BC)"):
+            data_source = self.bigcraftables_data
+            code = BigCraftable.trim(code)
+        else:
+            data_source = self.objects_data
+            code = Object.trim(code)
+
         if code in data_source:
             object_data = data_source[code]
             name = object_data.get("Name", "")
@@ -131,10 +152,16 @@ class GameData:
     def get_display_name(self, code: str) -> str:
         """
         获取物品的本地化名称，仅限于原版物品
-        :param code: 物品的 QualifiedItemId
+        :param code: 物品的 QualifiedItemId 或 Id
         :return: 物品的本地化名称
         """
-        data_source = self.objects_data
+        if code.startswith("(BC)"):
+            data_source = self.bigcraftables_data
+            code = BigCraftable.trim(code)
+        else:
+            data_source = self.objects_data
+            code = Object.trim(code)
+
         if code in data_source:
             object_data = data_source[code]
             display_name = object_data.get("DisplayName", "")
@@ -168,7 +195,7 @@ class GameData:
 
 class Object:
     """
-    物品类，存储物品的前缀、代码、数量和名称
+    物品类，存储物品的基本信息
 
     Attributes:
         raw: 物品的原始数据字典
@@ -177,15 +204,19 @@ class Object:
         sellprice: 物品的出售价格
         edibility: 物品的可食用性
         color: 物品的颜色值
+        itemID: 物品的 ID
+        quantity: 物品数量
     """
 
-    def __init__(self, obj: dict) -> None:
+    def __init__(self, obj: dict, ID: str) -> None:
         self.raw: dict = obj
         self.name: str = obj.get("Name")
         self.category: int = obj.get("Category")
         self.sellprice: int = obj.get("Price")
         self.edibility: int = obj.get("Edibility")
         self.color: str = self._get_color()
+        self.itemID = ID
+        self.quantity = 1
 
     def _get_color(self) -> str:
         """
@@ -220,6 +251,56 @@ class Object:
         if code.startswith("(O)"):
             return code
         return "(O)" + code
+
+    def get_field(self, field: str) -> Any:
+        """
+        获取物品的指定属性信息
+        :param field: 需要获取的属性
+        :exception KeyError: 不存在该属性
+        :return: 获取到的物品属性
+        """
+        try:
+            return self.raw[field]
+        except KeyError:
+            return "No such field!"
+
+
+class BigCraftable:
+    """
+    大型物品类，存储大型物品的基本信息
+
+    Attributes:
+        raw: 物品的原始数据字典
+        name: 物品的英语名称
+        itemID: 物品的 ID
+        quantity: 物品数量
+    """
+
+    def __init__(self, obj: dict, ID: str) -> None:
+        self.raw: dict = obj
+        self.name: str = obj.get("Name")
+        self.itemID = BigCraftable.qualify(ID)
+        self.quantity = 1
+
+    @staticmethod
+    def trim(code: str) -> str:
+        """
+        去除物品代码的 “(BC)” 前缀
+        :param code: 需要去除前缀的物品代码
+        :return: 去除前缀后的物品代码
+        :exception TypeError: 物品代码类型不合法
+        """
+        if type(code) is not str:
+            raise TypeError("code must be str!")
+        if code.startswith("(BC)"):
+            return code[4:]
+        return code
+
+    @staticmethod
+    def qualify(code: str) -> str:
+        if code.startswith("(BC)"):
+            return code
+        return "(BC)" + code
 
     def get_field(self, field: str) -> Any:
         """
@@ -292,7 +373,7 @@ class FruitTree:
 
     def __init__(self, fruit_tree: dict):
         self.raw: dict = fruit_tree
-        self.harvest: str = fruit_tree.get("Fruit")[0].get("ItemId")
+        self.harvest: str = Object.trim(fruit_tree.get("Fruit")[0].get("ItemId"))
         self.seasons: str = self._get_season(fruit_tree.get("Seasons"))
 
     @staticmethod

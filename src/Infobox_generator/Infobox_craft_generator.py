@@ -1,17 +1,17 @@
-from Recipes_helper import *
+from src.RecipeService import *
 
 
 def generate_infobox() -> None:
     """生成 Infobox craft 并打印"""
-    parser.parse_all_recipes()
-    recipes = parser.crafting_recipe_objects
+    recipes = recipe_data.crafting_recipe_objects
 
     for recipe_name, recipe_info in recipes.items():
+        product: Object | BigCraftable = recipe_info.product
         eng = recipe_name
-        name = recipe_info.product.displayName
-        sellprice = get_specific_attribute(recipe_info.product.code, "Price")
-        produces = recipe_info.product.count if int(recipe_info.product.count) > 1 else ""
-        ingredients = item_list_to_string(recipe_info.materials)
+        name = game_data.get_display_name(product.itemID)
+        sellprice = product.get_field("Price")
+        produces = product.quantity if int(product.quantity) > 1 else ""
+        ingredients = materials_to_string(recipe_info.materials)
 
         infobox = f"""{name}：\n
 <onlyinclude>{{{{{{{{{{1|Infobox craft}}}}}}

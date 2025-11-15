@@ -35,8 +35,7 @@ class Goods:
 
     def to_dict(self):
         try:
-            trimmed_id = Object.trim(self.item_id)
-            return {"Name": game_data.get_name(trimmed_id), "DisplayName": game_data.get_display_name(trimmed_id),
+            return {"Name": game_data.get_name(self.item_id), "DisplayName": game_data.get_display_name(self.item_id),
                     "ID": self.item_id, "Price": self.price, "AvailableStock": self.available_stock,
                     "TradeItemId": self.trade_item_id, "TradeItemAmount": self.trade_item_amount,
                     "IsRecipe": self.is_recipe, "IgnorePM": self.ignore_pm, "IsRandomSell": self.random_sell}
@@ -180,6 +179,7 @@ class ShopManager:
         self.nmday1 = ShopData(game_data.shops_data.get("Festival_NightMarket_MagicBoat_Day1"))
         self.nmday2 = ShopData(game_data.shops_data.get("Festival_NightMarket_MagicBoat_Day2"))
         self.nmday3 = ShopData(game_data.shops_data.get("Festival_NightMarket_MagicBoat_Day3"))
+        self.adventure_guild = ShopData(game_data.shops_data.get("AdventureShop"))
 
 
 if __name__ == "__main__":

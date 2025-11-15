@@ -79,7 +79,7 @@ def generate_infobox() -> None:
     fishes = game_data.fish_data
 
     for object_id, object_data in objects.items():
-        item = Object(object_data)
+        item = Object(object_data, object_id)
 
         if item.get_field("Category") != -4:
             continue
