@@ -38,7 +38,7 @@ def get_infobox(weapon_id, weapon_data) -> str:
 def get_shop_price(code: str) -> int | None:
     shop: ShopData = ShopManager().adventure_guild
     for good in shop.goods:
-        if good.id == code:
+        if good.item_id == code:
             return good.price
     return -1
 
